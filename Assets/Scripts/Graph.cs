@@ -21,7 +21,7 @@ public class Graph : MonoBehaviour
         for (int i = 0; i < resolution; i++)
         {
             float x = ((float)i + 0.5f) * step - 1f;
-            float y = (x * x);
+            float y = (x * x * x);
             Transform point = Instantiate(pointPrefab);
             point.localScale = Vector3.one * step;
             point.localPosition = new Vector3(x, y, 0);
